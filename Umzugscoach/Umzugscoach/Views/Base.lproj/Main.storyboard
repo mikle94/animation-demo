@@ -1,24 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XSQ-PI-BrI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Sofia Pro Regular.otf">
+            <string>SofiaProRegular</string>
+        </array>
+        <array key="Sofia Pro Semi Bold.otf">
+            <string>SofiaPro-SemiBold</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Intro View Controller-->
+        <scene sceneID="yhf-eV-SpI">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="8cA-MZ-xZY" customClass="IntroViewController" customModule="Umzugscoach" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vkx-f9-8RV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="vab-ru-arc">
+                                <rect key="frame" x="0.0" y="-64" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="house" translatesAutoresizingMaskIntoConstraints="NO" id="gGq-XF-MQu">
+                                <rect key="frame" x="105" y="58" width="165" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="Zuo-0S-vHO"/>
+                                    <constraint firstAttribute="width" constant="165" id="aOe-Ra-khf"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yomo Umzugscoach" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="Sg1-fD-DpL">
+                                <rect key="frame" x="12" y="230" width="351" height="29.5"/>
+                                <fontDescription key="fontDescription" name="SofiaPro-SemiBold" family="Sofia Pro" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.80029965753424659" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="EuQ-gl-s5x">
+                                <rect key="frame" x="40" y="371" width="295" height="64"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Neue Anschrift und keine Lust Briefe zu versenden? ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="0.79719606164383561" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="21" name="SofiaProRegular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" minimumLineHeight="32" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.75" translatesAutoresizingMaskIntoConstraints="NO" id="Jnh-Hn-zY1">
+                                <rect key="frame" x="40" y="451" width="295" height="60"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Der Umzugscoach hilft dir dabei, deine neue Adresse innerhalb weniger Minuten bei deinen Vertragspartnern zu hinterlegen.">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="0.79979130993150682" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="13" name="SofiaProRegular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" minimumLineHeight="20" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jk7-Fi-kfV">
+                                <rect key="frame" x="0.0" y="543" width="375" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="3Ow-y2-AAm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SofiaProRegular" family="Sofia Pro" pointSize="21"/>
+                                <state key="normal" title="Jetzt starten">
+                                    <color key="titleColor" red="0.17254901959999999" green="0.5450980392" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EuQ-gl-s5x" firstAttribute="leading" secondItem="7fW-Kc-Uwl" secondAttribute="leading" constant="40" id="31V-bg-JPf"/>
+                            <constraint firstItem="Jnh-Hn-zY1" firstAttribute="top" secondItem="EuQ-gl-s5x" secondAttribute="bottom" constant="16" id="83j-dw-KZI"/>
+                            <constraint firstItem="7fW-Kc-Uwl" firstAttribute="trailing" secondItem="Jk7-Fi-kfV" secondAttribute="trailing" id="DU0-zH-yIB"/>
+                            <constraint firstItem="Jk7-Fi-kfV" firstAttribute="leading" secondItem="7fW-Kc-Uwl" secondAttribute="leading" id="Dr1-vF-0Ws"/>
+                            <constraint firstItem="vab-ru-arc" firstAttribute="leading" secondItem="7fW-Kc-Uwl" secondAttribute="leading" id="Ftw-uo-NwA"/>
+                            <constraint firstItem="7fW-Kc-Uwl" firstAttribute="trailing" secondItem="Jnh-Hn-zY1" secondAttribute="trailing" constant="40" id="Fwe-7k-jLd"/>
+                            <constraint firstItem="Sg1-fD-DpL" firstAttribute="top" secondItem="gGq-XF-MQu" secondAttribute="bottom" constant="12" id="KAR-CV-TEv"/>
+                            <constraint firstItem="gGq-XF-MQu" firstAttribute="top" secondItem="7fW-Kc-Uwl" secondAttribute="top" constant="58" id="VNl-5H-IAZ"/>
+                            <constraint firstItem="7fW-Kc-Uwl" firstAttribute="bottom" secondItem="vab-ru-arc" secondAttribute="bottom" id="aa1-tM-kDU"/>
+                            <constraint firstItem="gGq-XF-MQu" firstAttribute="centerX" secondItem="7fW-Kc-Uwl" secondAttribute="centerX" id="e4k-Zc-iem"/>
+                            <constraint firstItem="Jk7-Fi-kfV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Jnh-Hn-zY1" secondAttribute="bottom" constant="32" id="eZs-7p-LAH"/>
+                            <constraint firstItem="vab-ru-arc" firstAttribute="top" secondItem="7fW-Kc-Uwl" secondAttribute="top" constant="-64" id="ehc-1Q-Qll"/>
+                            <constraint firstItem="EuQ-gl-s5x" firstAttribute="top" relation="lessThanOrEqual" secondItem="Sg1-fD-DpL" secondAttribute="bottom" priority="750" constant="117" id="f9a-ii-C29"/>
+                            <constraint firstItem="Sg1-fD-DpL" firstAttribute="leading" secondItem="7fW-Kc-Uwl" secondAttribute="leading" constant="12" id="l1i-5Y-dwc"/>
+                            <constraint firstItem="7fW-Kc-Uwl" firstAttribute="trailing" secondItem="EuQ-gl-s5x" secondAttribute="trailing" constant="40" id="qBJ-bl-GUI"/>
+                            <constraint firstItem="Jk7-Fi-kfV" firstAttribute="bottom" secondItem="7fW-Kc-Uwl" secondAttribute="bottom" id="t3j-Ju-kdp"/>
+                            <constraint firstItem="7fW-Kc-Uwl" firstAttribute="trailing" secondItem="Sg1-fD-DpL" secondAttribute="trailing" constant="12" id="t50-fk-T4I"/>
+                            <constraint firstItem="7fW-Kc-Uwl" firstAttribute="trailing" secondItem="vab-ru-arc" secondAttribute="trailing" id="u3o-mb-I2X"/>
+                            <constraint firstItem="EuQ-gl-s5x" firstAttribute="top" secondItem="Sg1-fD-DpL" secondAttribute="bottom" priority="250" constant="111.5" id="v9m-Rh-NqD"/>
+                            <constraint firstItem="Jnh-Hn-zY1" firstAttribute="leading" secondItem="7fW-Kc-Uwl" secondAttribute="leading" constant="40" id="vkF-rH-6bK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7fW-Kc-Uwl"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Hui-cu-3U1"/>
+                    <connections>
+                        <outlet property="continueBtn" destination="Jk7-Fi-kfV" id="ZJL-xz-10r"/>
+                        <outlet property="continueBtnBottom" destination="t3j-Ju-kdp" id="k8O-cs-wik"/>
+                        <outlet property="descriptionLabel" destination="Jnh-Hn-zY1" id="91g-5M-1yg"/>
+                        <outlet property="houseImageView" destination="gGq-XF-MQu" id="VlL-iZ-c8B"/>
+                        <outlet property="houseImageViewHeight" destination="Zuo-0S-vHO" id="oe3-MK-QSQ"/>
+                        <outlet property="houseImageViewTop" destination="VNl-5H-IAZ" id="dbg-bb-hUl"/>
+                        <outlet property="subtitleLabel" destination="EuQ-gl-s5x" id="RVe-kY-nsZ"/>
+                        <outlet property="titleLabel" destination="Sg1-fD-DpL" id="TnV-8D-k6x"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uHq-Wi-aa1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="560.79999999999995" y="78.710644677661179"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Yzc-vJ-0MU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XSQ-PI-BrI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="1kK-0F-BlF">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8cA-MZ-xZY" kind="relationship" relationship="rootViewController" id="0Fu-A4-KQt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IS5-qQ-ax6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-233.59999999999999" y="79.160419790104953"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg" width="375" height="667"/>
+        <image name="house" width="165" height="160"/>
+    </resources>
 </document>

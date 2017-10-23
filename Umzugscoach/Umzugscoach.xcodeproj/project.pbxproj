@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BF0584C842D17FCFCDAF7B2 /* Pods_Umzugscoach.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13FF46DEFEC3646ABA180809 /* Pods_Umzugscoach.framework */; };
 		2752F2481F9D428C009E914F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2752F2471F9D428C009E914F /* AppDelegate.swift */; };
-		2752F24A1F9D428C009E914F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2752F2491F9D428C009E914F /* ViewController.swift */; };
 		2752F24D1F9D428D009E914F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2752F24B1F9D428D009E914F /* Main.storyboard */; };
 		2752F24F1F9D428D009E914F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2752F24E1F9D428D009E914F /* Assets.xcassets */; };
 		2752F2521F9D428D009E914F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2752F2501F9D428D009E914F /* LaunchScreen.storyboard */; };
+		2752F25F1F9D4DDC009E914F /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2752F25E1F9D4DDC009E914F /* IntroViewController.swift */; };
+		2752F2621F9D53C5009E914F /* Sofia Pro Semi Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2752F2611F9D539E009E914F /* Sofia Pro Semi Bold.otf */; };
+		2752F2641F9D5484009E914F /* Sofia Pro Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2752F2631F9D546D009E914F /* Sofia Pro Regular.otf */; };
+		27A4871D1F9D72530041DFE5 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A4871C1F9D72530041DFE5 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13FF46DEFEC3646ABA180809 /* Pods_Umzugscoach.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Umzugscoach.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2752F2441F9D428C009E914F /* Umzugscoach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Umzugscoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2752F2471F9D428C009E914F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2752F2491F9D428C009E914F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2752F24C1F9D428D009E914F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2752F24E1F9D428D009E914F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2752F2511F9D428D009E914F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2752F2531F9D428D009E914F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2752F25E1F9D4DDC009E914F /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		2752F2611F9D539E009E914F /* Sofia Pro Semi Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sofia Pro Semi Bold.otf"; sourceTree = "<group>"; };
+		2752F2631F9D546D009E914F /* Sofia Pro Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sofia Pro Regular.otf"; sourceTree = "<group>"; };
+		27A4871C1F9D72530041DFE5 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		65F7F823FCC165E670A2CE46 /* Pods-Umzugscoach.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Umzugscoach.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Umzugscoach/Pods-Umzugscoach.debug.xcconfig"; sourceTree = "<group>"; };
+		B4B757636701707CAEF1EF50 /* Pods-Umzugscoach.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Umzugscoach.release.xcconfig"; path = "Pods/Target Support Files/Pods-Umzugscoach/Pods-Umzugscoach.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BF0584C842D17FCFCDAF7B2 /* Pods_Umzugscoach.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +51,8 @@
 			children = (
 				2752F2461F9D428C009E914F /* Umzugscoach */,
 				2752F2451F9D428C009E914F /* Products */,
+				AFB7D106E9753CBD7ECFAA33 /* Pods */,
+				F2F9E08460A3997F0BAE340C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +67,82 @@
 		2752F2461F9D428C009E914F /* Umzugscoach */ = {
 			isa = PBXGroup;
 			children = (
-				2752F2471F9D428C009E914F /* AppDelegate.swift */,
-				2752F2491F9D428C009E914F /* ViewController.swift */,
-				2752F24B1F9D428D009E914F /* Main.storyboard */,
-				2752F24E1F9D428D009E914F /* Assets.xcassets */,
-				2752F2501F9D428D009E914F /* LaunchScreen.storyboard */,
-				2752F2531F9D428D009E914F /* Info.plist */,
+				2752F2591F9D4A3E009E914F /* Models */,
+				2752F25A1F9D4A43009E914F /* Views */,
+				2752F25B1F9D4A46009E914F /* Controllers */,
+				2752F25C1F9D4A53009E914F /* Other Files */,
 			);
 			path = Umzugscoach;
+			sourceTree = "<group>";
+		};
+		2752F2591F9D4A3E009E914F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2752F25A1F9D4A43009E914F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2752F2501F9D428D009E914F /* LaunchScreen.storyboard */,
+				2752F24B1F9D428D009E914F /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2752F25B1F9D4A46009E914F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2752F25D1F9D4DC8009E914F /* Intro */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2752F25C1F9D4A53009E914F /* Other Files */ = {
+			isa = PBXGroup;
+			children = (
+				2752F2601F9D5389009E914F /* Fonts */,
+				2752F24E1F9D428D009E914F /* Assets.xcassets */,
+				27A4871C1F9D72530041DFE5 /* Utils.swift */,
+				2752F2471F9D428C009E914F /* AppDelegate.swift */,
+				2752F2531F9D428D009E914F /* Info.plist */,
+			);
+			path = "Other Files";
+			sourceTree = "<group>";
+		};
+		2752F25D1F9D4DC8009E914F /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				2752F25E1F9D4DDC009E914F /* IntroViewController.swift */,
+			);
+			path = Intro;
+			sourceTree = "<group>";
+		};
+		2752F2601F9D5389009E914F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2752F2611F9D539E009E914F /* Sofia Pro Semi Bold.otf */,
+				2752F2631F9D546D009E914F /* Sofia Pro Regular.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		AFB7D106E9753CBD7ECFAA33 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				65F7F823FCC165E670A2CE46 /* Pods-Umzugscoach.debug.xcconfig */,
+				B4B757636701707CAEF1EF50 /* Pods-Umzugscoach.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F2F9E08460A3997F0BAE340C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13FF46DEFEC3646ABA180809 /* Pods_Umzugscoach.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +152,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2752F2561F9D428D009E914F /* Build configuration list for PBXNativeTarget "Umzugscoach" */;
 			buildPhases = (
+				AA1EB67F783958B77AC0AF3E /* [CP] Check Pods Manifest.lock */,
 				2752F2401F9D428C009E914F /* Sources */,
 				2752F2411F9D428C009E914F /* Frameworks */,
 				2752F2421F9D428C009E914F /* Resources */,
+				3C73BB3C3D8598B9BD13E9F9 /* [CP] Embed Pods Frameworks */,
+				27EB2C0DCD582CCE32CAB84C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,6 +207,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2752F2641F9D5484009E914F /* Sofia Pro Regular.otf in Resources */,
+				2752F2621F9D53C5009E914F /* Sofia Pro Semi Bold.otf in Resources */,
 				2752F2521F9D428D009E914F /* LaunchScreen.storyboard in Resources */,
 				2752F24F1F9D428D009E914F /* Assets.xcassets in Resources */,
 				2752F24D1F9D428D009E914F /* Main.storyboard in Resources */,
@@ -131,13 +217,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		27EB2C0DCD582CCE32CAB84C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Umzugscoach/Pods-Umzugscoach-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C73BB3C3D8598B9BD13E9F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Umzugscoach/Pods-Umzugscoach-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA1EB67F783958B77AC0AF3E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2752F2401F9D428C009E914F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2752F24A1F9D428C009E914F /* ViewController.swift in Sources */,
 				2752F2481F9D428C009E914F /* AppDelegate.swift in Sources */,
+				2752F25F1F9D4DDC009E914F /* IntroViewController.swift in Sources */,
+				27A4871D1F9D72530041DFE5 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +346,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -262,7 +397,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -272,31 +407,35 @@
 		};
 		2752F2571F9D428D009E914F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65F7F823FCC165E670A2CE46 /* Pods-Umzugscoach.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N72K6G55W5;
-				INFOPLIST_FILE = Umzugscoach/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Umzugscoach/Other Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mk.Umzugscoach;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		2752F2581F9D428D009E914F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4B757636701707CAEF1EF50 /* Pods-Umzugscoach.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N72K6G55W5;
-				INFOPLIST_FILE = Umzugscoach/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Umzugscoach/Other Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mk.Umzugscoach;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
