@@ -8,5 +8,8 @@ target 'Umzugscoach' do
   use_frameworks!
 
   # Pods for Umzugscoach
+  # keyboard avoiding manager
+  pod 'IQKeyboardManagerSwift'
+  # animation library
   pod 'pop', '~> 1.0'
 end

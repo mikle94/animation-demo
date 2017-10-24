@@ -23,13 +23,42 @@ class IntroViewController: UIViewController {
     @IBOutlet weak var continueBtn: UIButton!
     @IBOutlet weak var continueBtnBottom: NSLayoutConstraint!
     
+    var animationWasShown: Bool = false
+    var isNavigationBarHidden: Bool = true {
+        didSet {
+            navigationController?.setNavigationBarHidden(isNavigationBarHidden, animated: isNavigationBarHidden)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationBar()
         setupInitialState()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        isNavigationBarHidden = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        isNavigationBarHidden = false
+    }
+    
     func setupNavigationBar() {
+        // title attributes
+        navigationController?.navigationBar.titleTextAttributes = [
+            NSAttributedStringKey.font: Config.fonts.navigationBarTitleFont,
+            NSAttributedStringKey.foregroundColor: Config.colors.black
+        ]
+        // custom back button
+        navigationController?.navigationBar.backIndicatorImage = #imageLiteral(resourceName: "left-arrow")
+        navigationController?.navigationBar.backIndicatorTransitionMaskImage = #imageLiteral(resourceName: "left-arrow")
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        // tint color
+        navigationController?.navigationBar.tintColor = Config.colors.black
+        // transparent nav bar
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.isTranslucent = true
@@ -37,7 +66,7 @@ class IntroViewController: UIViewController {
     }
     
     func setupInitialState() {
-        houseImageView.isHidden    = true
+        houseImageView.alpha       = 0.0
         titleLabel.alpha           = 0.0
         subtitleLabel.alpha        = 0.0
         descriptionLabel.alpha     = 0.0
@@ -46,13 +75,23 @@ class IntroViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        if !animationWasShown {
+            animationWasShown = true
+            delay(1.0) {
+                self.animateViews()
+            }
+        }
+    }
+    
+    func animateViews() {
+        animateViewAlpha(titleLabel, duration: 0.075)
+        animateViewAlpha(houseImageView, duration: 0.1)
         animateHouse()
-        animateLabel(titleLabel, duration: 0.35)
         delay(0.5) {
-            self.animateLabel(self.subtitleLabel, duration: 0.95)
+            self.animateViewAlpha(self.subtitleLabel, duration: 0.95)
         }
         delay(1.0) {
-            self.animateLabel(self.descriptionLabel, duration: 0.95)
+            self.animateViewAlpha(self.descriptionLabel, duration: 0.95)
         }
         delay(1.5) {
             self.animateContinueBtn()
@@ -60,43 +99,44 @@ class IntroViewController: UIViewController {
     }
     
     func animateHouse() {
-        // show house and label
-        houseImageView.isHidden = false
         // set house initial position before animation
-        houseImageViewTop.constant = 18.0
-        houseImageViewHeight.constant = 200.0
+        houseImageViewTop.constant = 162.0
+        houseImageViewHeight.constant = 100.0
         view.layoutIfNeeded()
-        // top animation using values from Flinto
-        let topAnimation = POPSpringAnimation(propertyNamed: kPOPLayoutConstraintConstant)
-        topAnimation!.dynamicsTension = 950
-        topAnimation!.dynamicsFriction = 17
-        topAnimation!.velocity = 0
-        topAnimation!.toValue = 58.0
-        // height animation
-        let heightAnimation = POPSpringAnimation(propertyNamed: kPOPLayoutConstraintConstant)
-        heightAnimation!.dynamicsTension = 950
-        heightAnimation!.dynamicsFriction = 17
-        heightAnimation!.velocity = 0
-        heightAnimation!.toValue = 160.0
-        // start animations
-        houseImageViewTop.pop_add(topAnimation, forKey: "topAnimation")
-        houseImageViewHeight.pop_add(heightAnimation, forKey: "heightAnimation")
+        UIView.animate(withDuration: 0.15, animations: {
+            self.houseImageViewTop.constant = 32.0
+            self.houseImageViewHeight.constant = 230.0
+            self.view.layoutIfNeeded()
+        }, completion: { Void in
+            UIView.animate(withDuration: 0.7, delay: 0, usingSpringWithDamping: 0.25, initialSpringVelocity: 0, options: .curveEaseOut, animations: {
+                self.houseImageViewTop.constant = 102.0
+                self.houseImageViewHeight.constant = 160.0
+                self.view.layoutIfNeeded()
+            }, completion: nil)
+        })
     }
     
-    func animateLabel(_ label: UILabel, duration: TimeInterval = 1.0) {
+    func animateViewAlpha(_ view: UIView, alpha: CGFloat = 1.0, duration: TimeInterval = 1.0) {
         UIView.animate(withDuration: duration) {
-            label.alpha = 1.0
+            view.alpha = 1.0
         }
     }
     
     func animateContinueBtn() {
         // bottom button animation using values from Flinto
-        let bottomButtonAnimation = POPSpringAnimation(propertyNamed: kPOPLayoutConstraintConstant)
-        bottomButtonAnimation!.dynamicsTension = 950
-        bottomButtonAnimation!.dynamicsFriction = 67
-        bottomButtonAnimation!.velocity = 12
-        bottomButtonAnimation!.toValue = 0.0
+        let slideAnimation = POPSpringAnimation(propertyNamed: kPOPLayoutConstraintConstant)
+        slideAnimation!.dynamicsTension = 950
+        slideAnimation!.dynamicsFriction = 67
+        slideAnimation!.velocity = 12
+        slideAnimation!.toValue = 0.0
         // start animations
-        continueBtnBottom.pop_add(bottomButtonAnimation, forKey: "bottomButtonAnimation")
+        continueBtnBottom.pop_add(slideAnimation, forKey: "slideAnimation")
+    }
+    
+    @IBAction func continueBtnPressed() {
+        if let addressViewController = storyboard?.instantiateViewController(withIdentifier: Config.identifiers.addressViewController) as? AddressViewController {
+            addressViewController.address = .old
+            navigationController?.pushViewController(addressViewController, animated: true)
+        }
     }
 }
