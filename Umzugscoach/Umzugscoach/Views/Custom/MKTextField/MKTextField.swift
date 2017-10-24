@@ -47,7 +47,6 @@ class MKTextField: UIView {
     
     var borderHighlighter: UIView = {
         let view = UIView()
-        view.frame = CGRect(x: 0, y: 0, width: 0, height: 2.0)
         view.backgroundColor = Config.colors.yellow
         return view
     }()
@@ -120,8 +119,6 @@ class MKTextField: UIView {
     }
     
     private func removeBorderAnimation() {
-        // setting frame back
-        layoutIfNeeded()
         borderHighlighter.removeFromSuperview()
     }
 }
