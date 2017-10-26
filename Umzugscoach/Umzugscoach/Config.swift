@@ -28,7 +28,10 @@ struct Config {
     }
     
     struct identifiers {
-        static let addressViewController = "addressViewController"
+        static let addressViewController               = "addressViewController"
+        static let partnerTableViewCell                = "partnerTableViewCell"
+        static let partnerSelectionViewControllerSegue = "showPartnersSelectionViewController"
+        static let congratulationViewControllerSegue = "showCongratulationViewController"
     }
     
     struct fonts {

@@ -14,6 +14,9 @@
 		273A8DA01F9EA1BA004BB7BF /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273A8D9F1F9EA1BA004BB7BF /* Config.swift */; };
 		273A8DA31F9EAA79004BB7BF /* MKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273A8DA21F9EAA79004BB7BF /* MKTextField.swift */; };
 		273A8DA51F9EAA90004BB7BF /* MKTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 273A8DA41F9EAA90004BB7BF /* MKTextField.xib */; };
+		2749D96A1FA128DC00CAF847 /* PartnerSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2749D9691FA128DC00CAF847 /* PartnerSelectionViewController.swift */; };
+		2749D96C1FA12B2600CAF847 /* PartnerSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2749D96B1FA12B2600CAF847 /* PartnerSelectionTableViewCell.swift */; };
+		2749D96E1FA12D2200CAF847 /* Partner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2749D96D1FA12D2200CAF847 /* Partner.swift */; };
 		2752F2481F9D428C009E914F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2752F2471F9D428C009E914F /* AppDelegate.swift */; };
 		2752F24D1F9D428D009E914F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2752F24B1F9D428D009E914F /* Main.storyboard */; };
 		2752F24F1F9D428D009E914F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2752F24E1F9D428D009E914F /* Assets.xcassets */; };
@@ -22,6 +25,8 @@
 		2752F2621F9D53C5009E914F /* Sofia Pro Semi Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2752F2611F9D539E009E914F /* Sofia Pro Semi Bold.otf */; };
 		2752F2641F9D5484009E914F /* Sofia Pro Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2752F2631F9D546D009E914F /* Sofia Pro Regular.otf */; };
 		27A4871D1F9D72530041DFE5 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A4871C1F9D72530041DFE5 /* Utils.swift */; };
+		27D968861FA13F17008E07CA /* CongratulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D968851FA13F17008E07CA /* CongratulationViewController.swift */; };
+		27D968881FA14FE9008E07CA /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D968871FA14FE9008E07CA /* UIView+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,9 @@
 		273A8D9F1F9EA1BA004BB7BF /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		273A8DA21F9EAA79004BB7BF /* MKTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKTextField.swift; sourceTree = "<group>"; };
 		273A8DA41F9EAA90004BB7BF /* MKTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MKTextField.xib; sourceTree = "<group>"; };
+		2749D9691FA128DC00CAF847 /* PartnerSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnerSelectionViewController.swift; sourceTree = "<group>"; };
+		2749D96B1FA12B2600CAF847 /* PartnerSelectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnerSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		2749D96D1FA12D2200CAF847 /* Partner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Partner.swift; sourceTree = "<group>"; };
 		2752F2441F9D428C009E914F /* Umzugscoach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Umzugscoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2752F2471F9D428C009E914F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2752F24C1F9D428D009E914F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -42,6 +50,8 @@
 		2752F2611F9D539E009E914F /* Sofia Pro Semi Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sofia Pro Semi Bold.otf"; sourceTree = "<group>"; };
 		2752F2631F9D546D009E914F /* Sofia Pro Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sofia Pro Regular.otf"; sourceTree = "<group>"; };
 		27A4871C1F9D72530041DFE5 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		27D968851FA13F17008E07CA /* CongratulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationViewController.swift; sourceTree = "<group>"; };
+		27D968871FA14FE9008E07CA /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		65F7F823FCC165E670A2CE46 /* Pods-Umzugscoach.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Umzugscoach.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Umzugscoach/Pods-Umzugscoach.debug.xcconfig"; sourceTree = "<group>"; };
 		B4B757636701707CAEF1EF50 /* Pods-Umzugscoach.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Umzugscoach.release.xcconfig"; path = "Pods/Target Support Files/Pods-Umzugscoach/Pods-Umzugscoach.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				273A8D931F9E91DA004BB7BF /* String+Ext.swift */,
+				27D968871FA14FE9008E07CA /* UIView+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -100,6 +111,15 @@
 			path = MKTextField;
 			sourceTree = "<group>";
 		};
+		2749D9681FA128BE00CAF847 /* Partner Selection */ = {
+			isa = PBXGroup;
+			children = (
+				2749D9691FA128DC00CAF847 /* PartnerSelectionViewController.swift */,
+				2749D96B1FA12B2600CAF847 /* PartnerSelectionTableViewCell.swift */,
+			);
+			path = "Partner Selection";
+			sourceTree = "<group>";
+		};
 		2752F23B1F9D428C009E914F = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +154,7 @@
 		2752F2591F9D4A3E009E914F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2749D96D1FA12D2200CAF847 /* Partner.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -153,6 +174,8 @@
 			children = (
 				2752F25D1F9D4DC8009E914F /* Intro */,
 				273A8D9A1F9EA050004BB7BF /* Enter Address */,
+				2749D9681FA128BE00CAF847 /* Partner Selection */,
+				27D968841FA13E64008E07CA /* Congratulation */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -160,10 +183,10 @@
 		2752F25C1F9D4A53009E914F /* Other Files */ = {
 			isa = PBXGroup;
 			children = (
+				27A4871C1F9D72530041DFE5 /* Utils.swift */,
 				273A8D951F9E91DC004BB7BF /* Extensions */,
 				2752F2601F9D5389009E914F /* Fonts */,
 				2752F24E1F9D428D009E914F /* Assets.xcassets */,
-				27A4871C1F9D72530041DFE5 /* Utils.swift */,
 				2752F2531F9D428D009E914F /* Info.plist */,
 			);
 			path = "Other Files";
@@ -184,6 +207,14 @@
 				2752F2631F9D546D009E914F /* Sofia Pro Regular.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		27D968841FA13E64008E07CA /* Congratulation */ = {
+			isa = PBXGroup;
+			children = (
+				27D968851FA13F17008E07CA /* CongratulationViewController.swift */,
+			);
+			path = Congratulation;
 			sourceTree = "<group>";
 		};
 		AFB7D106E9753CBD7ECFAA33 /* Pods */ = {
@@ -331,9 +362,14 @@
 			files = (
 				2752F2481F9D428C009E914F /* AppDelegate.swift in Sources */,
 				2752F25F1F9D4DDC009E914F /* IntroViewController.swift in Sources */,
+				2749D96A1FA128DC00CAF847 /* PartnerSelectionViewController.swift in Sources */,
+				2749D96C1FA12B2600CAF847 /* PartnerSelectionTableViewCell.swift in Sources */,
 				27A4871D1F9D72530041DFE5 /* Utils.swift in Sources */,
 				273A8D9E1F9EA097004BB7BF /* AddressViewController.swift in Sources */,
+				27D968861FA13F17008E07CA /* CongratulationViewController.swift in Sources */,
+				2749D96E1FA12D2200CAF847 /* Partner.swift in Sources */,
 				273A8DA01F9EA1BA004BB7BF /* Config.swift in Sources */,
+				27D968881FA14FE9008E07CA /* UIView+Ext.swift in Sources */,
 				273A8DA31F9EAA79004BB7BF /* MKTextField.swift in Sources */,
 				273A8D941F9E91DA004BB7BF /* String+Ext.swift in Sources */,
 				273A8D991F9E92E4004BB7BF /* MKPrimaryButton.swift in Sources */,
@@ -410,7 +446,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -461,7 +497,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -477,7 +513,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N72K6G55W5;
 				INFOPLIST_FILE = "$(SRCROOT)/Umzugscoach/Other Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mk.Umzugscoach;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -494,7 +530,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N72K6G55W5;
 				INFOPLIST_FILE = "$(SRCROOT)/Umzugscoach/Other Files/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mk.Umzugscoach;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import pop
 
 class IntroViewController: UIViewController {
 
@@ -84,14 +83,14 @@ class IntroViewController: UIViewController {
     }
     
     func animateViews() {
-        animateViewAlpha(titleLabel, duration: 0.075)
-        animateViewAlpha(houseImageView, duration: 0.1)
+        titleLabel.animateAlpha(duration: 0.075)
+        houseImageView.animateAlpha(duration: 0.1)
         animateHouse()
         delay(0.5) {
-            self.animateViewAlpha(self.subtitleLabel, duration: 0.95)
+            self.subtitleLabel.animateAlpha(duration: 0.95)
         }
         delay(1.0) {
-            self.animateViewAlpha(self.descriptionLabel, duration: 0.95)
+            self.descriptionLabel.animateAlpha(duration: 0.95)
         }
         delay(1.5) {
             self.animateContinueBtn()
@@ -116,21 +115,11 @@ class IntroViewController: UIViewController {
         })
     }
     
-    func animateViewAlpha(_ view: UIView, alpha: CGFloat = 1.0, duration: TimeInterval = 1.0) {
-        UIView.animate(withDuration: duration) {
-            view.alpha = 1.0
-        }
-    }
-    
     func animateContinueBtn() {
-        // bottom button animation using values from Flinto
-        let slideAnimation = POPSpringAnimation(propertyNamed: kPOPLayoutConstraintConstant)
-        slideAnimation!.dynamicsTension = 950
-        slideAnimation!.dynamicsFriction = 67
-        slideAnimation!.velocity = 12
-        slideAnimation!.toValue = 0.0
-        // start animations
-        continueBtnBottom.pop_add(slideAnimation, forKey: "slideAnimation")
+        UIView.animate(withDuration: 0.15) {
+            self.continueBtnBottom.constant = 0.0
+            self.view.layoutIfNeeded()
+        }
     }
     
     @IBAction func continueBtnPressed() {

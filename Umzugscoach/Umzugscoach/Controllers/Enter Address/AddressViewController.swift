@@ -59,8 +59,6 @@ class AddressViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        // add 60.0 to distance because of continue button
-        IQKeyboardManager.sharedManager().keyboardDistanceFromTextField = 10.0 + 60.0
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(keyboardNotification(_:)),
@@ -71,8 +69,6 @@ class AddressViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        // move back to default value
-        IQKeyboardManager.sharedManager().keyboardDistanceFromTextField = 10.0
         NotificationCenter.default.removeObserver(self)
     }
     
@@ -81,7 +77,7 @@ class AddressViewController: UIViewController {
             addressViewController.address = .new
             navigationController?.pushViewController(addressViewController, animated: true)
         } else {
-            print("go to table view")
+            performSegue(withIdentifier: Config.identifiers.partnerSelectionViewControllerSegue, sender: nil)
         }
     }
     

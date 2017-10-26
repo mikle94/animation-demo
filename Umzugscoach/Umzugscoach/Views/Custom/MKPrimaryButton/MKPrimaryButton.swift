@@ -14,6 +14,11 @@ class MKPrimaryButton: UIButton {
     let gradientStartColor = Config.colors.pink
     let gradientEndColor   = Config.colors.purple
     let buttonFont         = Config.fonts.mkPrimaryButtonFont
+    
+    override func setTitle(_ title: String?, for state: UIControlState) {
+        super.setTitle(title, for: .normal)
+        addGradientTitle()
+    }
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -26,11 +31,14 @@ class MKPrimaryButton: UIButton {
     }
     
     private func setupAppearance() {
-        titleLabel?.font = buttonFont
         backgroundColor = bgColor
+        addGradientTitle()
+    }
+    
+    private func addGradientTitle() {
         let text = title(for: .normal) ?? ""
         let color = text.gradientColor(
-            font: buttonFont,
+            font: titleLabel?.font ?? buttonFont,
             startColor: gradientStartColor,
             endColor: gradientEndColor
         )

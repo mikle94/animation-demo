@@ -23,6 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.sharedManager().enable = true
         IQKeyboardManager.sharedManager().enableAutoToolbar = false
         IQKeyboardManager.sharedManager().shouldResignOnTouchOutside = true
+        IQKeyboardManager.sharedManager().disabledDistanceHandlingClasses = [AddressViewController.self]
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
